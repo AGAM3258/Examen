@@ -1,0 +1,10 @@
+	.div1{position:absolute; left:10px; top:62px; z-index:1;}
+  .div1, .div3{margin: 20px auto; width: 330px; height: 500px;}
+	form{margin: 0 50px;margin: 20px auto;width: 300px; height: 130px; -webkit-border-radius: 8px/7px; -moz-border-radius: 8px/7px; border-radius: 8px/7px; background-color: #ebebeb; -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.31); -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.31); box-shadow: 1px 2px 5px rgba(0,0,0,.31); border: solid 1px #000;}
+  select{width: 200px;}
+  table {font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;font-size: 14px; border-bottom: 1px solid #fff;margin: 45px;width: 550px;text-align: left;border-collapse: collapse; }
+  th {font-size: 16px;font-weight: normal;padding: 8px;background: #b9c9fe;border-top: 4px solid #aabcfe;border-bottom: 1px solid #fff; color: #000; }
+  td {padding: 8px;background: #e8edff;border-bottom: 1px solid #fff; color: #669;border-top: 1px solid transparent; }
+  tr:hover td { background: #d0dafd; color: #339; }
+  .div2{ position:absolute; left:360px;top:60px;z-index:1; }
+  .div3{ position:absolute; left:1020px; top:62px; z-index:1;}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta http-equiv="Content-Tipe" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-witdh, initial-scale=1, maximum-scale=1.0">
+	<title>LOGIN</title>
+	<!--CSS-->
+ <link rel="stylesheet" type="text/css" href="../css/loginstyle.css">
+<!--<link rel="stylesheet" type="text/css" href="../css/fonts-googleapis.css">-->
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+ <link rel="stylesheet" type="text/css" href="../css/modal.css">
+</head>
+
+<body style="width:100%; background:transparent url(../images/imginicio/headr1.jpg) no-repeat; height:450px; position:relative;">
+	<div class="testbox" style=" background-color: rgba(0, 0, 0, 0.1); height: 500px;">
+		<br>
+		<br>
+		<h1 class="h11">Login</h1>
+				<center>
+					<form action="php/login.php" method="post"">
+						<br>
+						<hr style="background: #000;">
+						<hr style="background: #000;">
+						<br>
+						<input type="number" id="username"  style="width: 212px; height: 37px;" name="username" placeholder="Control number" required="" autofocus="">
+						<input type="password" id="password" class="form-control" name="password" placeholder="password" required="" autofocus="">
+						<br>
+						<button class="button" name="mulai_login" value="Login" type="Submit" id="login"><span ></span> log in </button>
+					</form>
+				</center>
+			</div>
+<!--SCRIPTS-->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript">
+		$("#mulai_login").click(function(){//llama el input
+
+			//waitingDialog.show();
+
+			var username = $('#username').val();//llama el id del input de numero de control
+			var password = $('#password').val();//llama el id del input password
+
+			var datas = "username="+username"password="+password; //almacenamientos de datos en data
+
+			$.ajax({//inicio del ajax
+				type: "POST",//tipo de metodo
+				url: "php/login.php",//locacion a donde se va a mandar los datos
+				data: datas//datos a mandar
+			}).done(function(data) {//llama la funcion para enviar los datos
+
+				//waitingDialog.hide();
+
+				$('#info_login').html(data);
+			});
+		});
+	</script>
+	<span id="info_login"></span>
+</body>
+</html>

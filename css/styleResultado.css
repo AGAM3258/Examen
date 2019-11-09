@@ -1,0 +1,28 @@
+body{ background: #C0FFFF }
+table
+{
+	border:3px solid #C0FFFF;
+	width: 300px;
+	height: 90px;
+    border-collapse: collapse;
+    background-color: white;
+}
+th{ background: #1C4DA5; font-size: 20;     color: white;}
+td{ font-size: 18px; background: #C0FFFF; color: black;}
+td, th
+{
+    border: 1px solid #7F5A39;
+    text-align: center;
+}
+.div1{ background-color: #1C4DA5; text-align: center; border: 3px solid #C0FFFF; width: 795px;  color: white;}
+.div2, .div3, .div4, .div5{ background: blue; width: 300px;}
+.div1{	position:absolute; left:300px; top:62px; z-index:1;}
+.div2{ position:absolute; left:800px; top:126px; z-index:1; }
+.div3{ position:absolute; left:410px; top:470px; z-index:1; }
+.div4{ position:absolute; left:800px; top:305px; z-index:1; }
+.div5{ position:absolute; left:800px; top:400px; z-index:1; }
+.div6{ position:absolute; left:300px; top:131px; z-index:1;  width: 497px; height: 395px; }
+.div7{ position:absolute; left:10px; top:80px; z-index:1;  width: 0px; height: 0px; }
+
+.button{background: #1C4DA5; color: white; width: 260px; border:solid #000 1px; height: 30px;}
+.button:hover{background: #fff; color: black;}

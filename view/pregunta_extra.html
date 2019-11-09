@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crear</title>
+	<style type="text/css">
+		.but{background: #5858FF; border: 1px solid #5858FF; color: white;}
+		.but:hover{background: #fff; color: black; border:1px solid #5858FF;}
+		.form1{width: 400px;height: 250px; text-align: center;  border-radius: 10px;}
+		textarea{width: 350px}
+
+	</style>
+</head>
+<body style="width:100%; background:transparent url(../images/imginicio/headr1.jpg) no-repeat; height:450px; position:relative;">
+	<form class="form1" method="post" action="../php/pregunta_extra.php">
+		<legend>Extra practice questions</legend>
+		<label>Questions:</label><br>
+		<textarea type="text" name="pre" id="pre" required="" size="250"></textarea>
+		<br><br>
+		<input type="submit" class="but" name="save" value="save">
+	</form>
+</body>
+</html>

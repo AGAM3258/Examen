@@ -1,0 +1,9 @@
+body{ background: #F5F5CD; }
+table{ border:3px solid #7F5A39; width: 600px; height: 90px; border-collapse: collapse; background-color: white; }
+th{ background: #FFE4C4; font-size: 20; }
+td{ font-size: 18px; }
+td, th{ border: 1px solid #7F5A39; text-align: center; }
+.div1{ position:absolute; left:10px; top:62px; z-index:1; align-content: center;}
+.div2{ position:absolute; left:360px; top:82px; z-index:1; }
+.div3{ position:absolute; left:1020px; top:62px; z-index:1; }
+form{ border:2px solid #7F5A39; }
